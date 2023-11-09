@@ -1,0 +1,208 @@
+﻿/*----------CSS Reset--------------------------*/
+* {
+    margin: 0;
+    padding: 0;
+}
+/*-----------------------------navbar CSS-----------------------*/
+#navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    font-family: 'Dancing Script', cursive;
+}
+
+    #navbar::before {
+        content: "";
+        background-color: purple;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        opacity: 0.7;
+        top: 0px;
+        left: 0px;
+    }
+
+    #navbar ul {
+        display: flex;
+        position: relative;
+        margin: 0;
+    }
+
+        #navbar ul li {
+            list-style: none;
+            font-size: 1.3rem;
+            margin: 30px 0px;
+        }
+
+            #navbar ul li a {
+                margin: 11px 13px;
+                padding: 7px 5px;
+                color: white;
+                text-decoration: none;
+                /* border-radius: 20px; */
+            }
+
+                #navbar ul li a:hover {
+                    border-radius: 20px;
+                    background-color: #fef0fe;
+                    color: black;
+                }
+
+/*-----------------------------navbar CSS-----------------------*/
+
+/*-----------------------------Default Page CSS-----------------------*/
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.containerr {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
+    width: 400px;
+    margin: 0 auto;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+footer {
+    margin-top: auto;
+}
+
+.Top_heading {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+}
+
+    .Top_heading h1 {
+        margin: 7px;
+        padding: 4px;
+        color: purple;
+        text-align: center;
+    }
+
+    .Top_heading p {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        align-content: center;
+        font-size: 15px;
+        margin: 1px 25px;
+        padding: 1px 1px 25px 1px;
+        text-align: center;
+        color: #b488c9;
+    }
+
+#Option_heading {
+    margin: 17px;
+}
+
+.label {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    border-radius: 50px;
+    background-color: purple;
+    color: white;
+    margin: 3px 4px;
+    padding: 3px 4px;
+    width: 200px;
+    height: 70px;
+}
+
+.a-tag {
+    color: white;
+    text-decoration: none;
+    font-size: 25px;
+    font-family: 'Times New Roman', Times, serif;
+    margin-top: 12px;
+}
+/*-------------------------------------Default Page CSS------------------*/
+.h3Class {
+    color: purple;
+}
+
+/*-------------------------------------Product Page CSS------------------*/
+
+.div1 {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    margin: 0px 400px;
+    padding: 21px 0px;
+    background-color: #fef0fe;
+}
+
+.tb1 {
+    display: block;
+    height: 32px;
+    width: 250px;
+    font-family: monospace;
+    font-size: 20px;
+    margin-left: 10px;
+    margin-bottom: 20px;
+}
+
+.tb11 {
+    display: block;
+    height: 32px;
+    width: 250px;
+    font-family: monospace;
+    font-size: 20px;
+    margin-left: 10px;
+    margin-bottom: 20px;
+}
+
+.lbl1 {
+    display: block;
+    text-align: center
+}
+
+.btn1 {
+    width: 150px;
+    font-size: 20px;
+    margin-left: 5px;
+    margin-bottom: 24px;
+    background-color: purple;
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    border-radius: 5px;
+}
+
+.lbl1 {
+    width: 250px;
+    font-family: monospace;
+    font-size: 15px;
+    height: 100px;
+    color: #8747ab;
+    text-align: left;
+}
+
+#Option_heading {
+    margin: 17px;
+    font-size: 30px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 800;
+}
+
+footer {
+    background: purple;
+    color: white;
+    /* margin: 3px 3px; */
+    padding: 7px 7px;
+    margin-top: auto;
+}
+
+.center {
+    text-align: center;
+}
+

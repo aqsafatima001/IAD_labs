@@ -1,0 +1,525 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>
+    </SchemaVersion>
+    <ProjectGuid>{3B8BD848-A506-46A9-8F2E-444861FE795F}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{F184B08F-C81C-45F6-A57F-5ABD9991F28F}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <RootNamespace>labs</RootNamespace>
+    <AssemblyName>labs</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <MyType>Custom</MyType>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort>44382</IISExpressSSLPort>
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>labs.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>labs.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Collections.Specialized" />
+    <Import Include="System.Configuration" />
+    <Import Include="System.Text" />
+    <Import Include="System.Text.RegularExpressions" />
+    <Import Include="System.Web" />
+    <Import Include="System.Web.Caching" />
+    <Import Include="System.Web.SessionState" />
+    <Import Include="System.Web.Security" />
+    <Import Include="System.Web.Profile" />
+    <Import Include="System.Web.UI" />
+    <Import Include="System.Web.UI.WebControls" />
+    <Import Include="System.Web.UI.WebControls.WebParts" />
+    <Import Include="System.Web.UI.HtmlControls" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="default.aspx" />
+    <Content Include="lab11\default.aspx" />
+    <Content Include="lab11\info.aspx" />
+    <Content Include="lab11\lab11.PNG" />
+    <Content Include="lab12\default.aspx" />
+    <Content Include="lab12\info.aspx" />
+    <Content Include="lab12\lab12.PNG" />
+    <Content Include="lab14\default.aspx" />
+    <Content Include="lab14\info.aspx" />
+    <Content Include="lab14\lab14.PNG" />
+    <Content Include="lab15\default.aspx" />
+    <Content Include="lab15\info.aspx" />
+    <Content Include="lab15\lab15.PNG" />
+    <Content Include="lab16\info.aspx" />
+    <Content Include="lab16\lab16.1.PNG" />
+    <Content Include="lab16\lab16.2.PNG" />
+    <Content Include="lab1\default.aspx" />
+    <Content Include="lab1\info.aspx" />
+    <Content Include="lab1\lab1.PNG" />
+    <Content Include="lab1\lab1_stylesheet.css" />
+    <Content Include="lab2\default.aspx" />
+    <Content Include="lab2\info.aspx" />
+    <Content Include="lab2\lab02.PNG" />
+    <Content Include="lab3\default.aspx" />
+    <Content Include="lab3\info.aspx" />
+    <Content Include="lab3\lab03.PNG" />
+    <Content Include="lab4\default.aspx" />
+    <Content Include="lab4\info.aspx" />
+    <Content Include="lab4\lab04.PNG" />
+    <Content Include="lab5\default.aspx" />
+    <Content Include="lab5\info.aspx" />
+    <Content Include="lab5\lab05.PNG" />
+    <Content Include="lab6\default.aspx" />
+    <Content Include="lab6\info.aspx" />
+    <Content Include="lab6\lab06.1.PNG" />
+    <Content Include="lab6\lab06.2.PNG" />
+    <Content Include="lab6\lab06.3.PNG" />
+    <Content Include="lab6\lab6_styleSheet.css" />
+    <Content Include="lab6\page1.aspx" />
+    <Content Include="lab6\page2.aspx" />
+    <Content Include="lab7\AddProduct.aspx" />
+    <Content Include="lab7\CusLogin.aspx" />
+    <Content Include="lab7\EmpLogin.aspx" />
+    <Content Include="lab7\info.aspx" />
+    <Content Include="lab7\lab07.1.PNG" />
+    <Content Include="lab7\lab07.2.PNG" />
+    <Content Include="lab7\lab07.3.PNG" />
+    <Content Include="lab7\loginn.css" />
+    <Content Include="lab7\Main.aspx" />
+    <Content Include="lab7\main.css" />
+    <Content Include="lab7\PlaceOrder.aspx" />
+    <Content Include="lab7\RegCus.aspx" />
+    <Content Include="lab8\AddProduct_lab08.aspx" />
+    <Content Include="lab8\CustomerLogin_lab08.aspx" />
+    <Content Include="lab8\EmployeeLogin_lab08.aspx" />
+    <Content Include="lab8\info.aspx" />
+    <Content Include="lab8\lab08.PNG" />
+    <Content Include="lab8\loginn.css" />
+    <Content Include="lab8\main.css" />
+    <Content Include="lab8\Main_lab08.aspx" />
+    <Content Include="lab8\PlaceOrder_lab08.aspx" />
+    <Content Include="lab8\RegisterCustomer_lab08.aspx" />
+    <Content Include="navbarStylesheet.css" />
+    <Content Include="StyleSheet1.css" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="default.aspx.designer.vb">
+      <DependentUpon>default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="default.aspx.vb">
+      <DependentUpon>default.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="lab11\default.aspx.designer.vb">
+      <DependentUpon>default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="lab11\default.aspx.vb">
+      <DependentUpon>default.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="lab11\info.aspx.designer.vb">
+      <DependentUpon>info.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="lab11\info.aspx.vb">
+      <DependentUpon>info.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="lab12\default.aspx.designer.vb">
+      <DependentUpon>default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="lab12\default.aspx.vb">
+      <DependentUpon>default.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="lab12\info.aspx.designer.vb">
+      <DependentUpon>info.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="lab12\info.aspx.vb">
+      <DependentUpon>info.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="lab14\default.aspx.designer.vb">
+      <DependentUpon>default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="lab14\default.aspx.vb">
+      <DependentUpon>default.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="lab14\info.aspx.designer.vb">
+      <DependentUpon>info.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="lab14\info.aspx.vb">
+      <DependentUpon>info.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="lab15\default.aspx.designer.vb">
+      <DependentUpon>default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="lab15\default.aspx.vb">
+      <DependentUpon>default.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="lab15\info.aspx.designer.vb">
+      <DependentUpon>info.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="lab15\info.aspx.vb">
+      <DependentUpon>info.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="lab16\info.aspx.designer.vb">
+      <DependentUpon>info.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="lab16\info.aspx.vb">
+      <DependentUpon>info.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="lab1\default.aspx.designer.vb">
+      <DependentUpon>default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="lab1\default.aspx.vb">
+      <DependentUpon>default.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="lab1\info.aspx.designer.vb">
+      <DependentUpon>info.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="lab1\info.aspx.vb">
+      <DependentUpon>info.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="lab2\default.aspx.designer.vb">
+      <DependentUpon>default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="lab2\default.aspx.vb">
+      <DependentUpon>default.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="lab2\info.aspx.designer.vb">
+      <DependentUpon>info.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="lab2\info.aspx.vb">
+      <DependentUpon>info.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="lab3\default.aspx.designer.vb">
+      <DependentUpon>default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="lab3\default.aspx.vb">
+      <DependentUpon>default.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="lab3\info.aspx.designer.vb">
+      <DependentUpon>info.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="lab3\info.aspx.vb">
+      <DependentUpon>info.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="lab4\default.aspx.designer.vb">
+      <DependentUpon>default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="lab4\default.aspx.vb">
+      <DependentUpon>default.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="lab4\info.aspx.designer.vb">
+      <DependentUpon>info.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="lab4\info.aspx.vb">
+      <DependentUpon>info.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="lab5\default.aspx.designer.vb">
+      <DependentUpon>default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="lab5\default.aspx.vb">
+      <DependentUpon>default.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="lab5\info.aspx.designer.vb">
+      <DependentUpon>info.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="lab5\info.aspx.vb">
+      <DependentUpon>info.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="lab6\default.aspx.designer.vb">
+      <DependentUpon>default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="lab6\default.aspx.vb">
+      <DependentUpon>default.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="lab6\info.aspx.designer.vb">
+      <DependentUpon>info.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="lab6\info.aspx.vb">
+      <DependentUpon>info.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="lab6\page1.aspx.designer.vb">
+      <DependentUpon>page1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="lab6\page1.aspx.vb">
+      <DependentUpon>page1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="lab6\page2.aspx.designer.vb">
+      <DependentUpon>page2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="lab6\page2.aspx.vb">
+      <DependentUpon>page2.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="lab7\AddProduct.aspx.designer.vb">
+      <DependentUpon>AddProduct.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="lab7\AddProduct.aspx.vb">
+      <DependentUpon>AddProduct.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="lab7\CusLogin.aspx.designer.vb">
+      <DependentUpon>CusLogin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="lab7\CusLogin.aspx.vb">
+      <DependentUpon>CusLogin.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="lab7\EmpLogin.aspx.designer.vb">
+      <DependentUpon>EmpLogin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="lab7\EmpLogin.aspx.vb">
+      <DependentUpon>EmpLogin.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="lab7\info.aspx.designer.vb">
+      <DependentUpon>info.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="lab7\info.aspx.vb">
+      <DependentUpon>info.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="lab7\Main.aspx.designer.vb">
+      <DependentUpon>Main.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="lab7\Main.aspx.vb">
+      <DependentUpon>Main.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="lab7\PlaceOrder.aspx.designer.vb">
+      <DependentUpon>PlaceOrder.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="lab7\PlaceOrder.aspx.vb">
+      <DependentUpon>PlaceOrder.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="lab7\RegCus.aspx.designer.vb">
+      <DependentUpon>RegCus.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="lab7\RegCus.aspx.vb">
+      <DependentUpon>RegCus.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="lab8\AddProduct_lab08.aspx.designer.vb">
+      <DependentUpon>AddProduct_lab08.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="lab8\AddProduct_lab08.aspx.vb">
+      <DependentUpon>AddProduct_lab08.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="lab8\CustomerLogin_lab08.aspx.designer.vb">
+      <DependentUpon>CustomerLogin_lab08.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="lab8\CustomerLogin_lab08.aspx.vb">
+      <DependentUpon>CustomerLogin_lab08.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="lab8\EmployeeLogin_lab08.aspx.designer.vb">
+      <DependentUpon>EmployeeLogin_lab08.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="lab8\EmployeeLogin_lab08.aspx.vb">
+      <DependentUpon>EmployeeLogin_lab08.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="lab8\info.aspx.designer.vb">
+      <DependentUpon>info.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="lab8\info.aspx.vb">
+      <DependentUpon>info.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="lab8\Main_lab08.aspx.designer.vb">
+      <DependentUpon>Main_lab08.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="lab8\Main_lab08.aspx.vb">
+      <DependentUpon>Main_lab08.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="lab8\PlaceOrder_lab08.aspx.designer.vb">
+      <DependentUpon>PlaceOrder_lab08.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="lab8\PlaceOrder_lab08.aspx.vb">
+      <DependentUpon>PlaceOrder_lab08.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="lab8\RegisterCustomer_lab08.aspx.designer.vb">
+      <DependentUpon>RegisterCustomer_lab08.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="lab8\RegisterCustomer_lab08.aspx.vb">
+      <DependentUpon>RegisterCustomer_lab08.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\MyExtensions\MyWebExtension.vb">
+      <VBMyExtensionTemplateID>Microsoft.VisualBasic.Web.MyExtension</VBMyExtensionTemplateID>
+      <VBMyExtensionTemplateVersion>1.0.0.0</VBMyExtensionTemplateVersion>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup />
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>50016</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>https://localhost:44382/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

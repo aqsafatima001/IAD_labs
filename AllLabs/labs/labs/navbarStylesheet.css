@@ -1,0 +1,62 @@
+﻿/*-----------------------------navbar CSS-----------------------*/
+#navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    font-family: 'Dancing Script', cursive;
+    margin-bottom: 20px;
+}
+
+    #navbar::before {
+        content: "";
+        background-color: purple;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        opacity: 0.7;
+        top: 0px;
+        left: 0px;
+    }
+
+    #navbar ul {
+        display: flex;
+        position: relative;
+        margin: 0;
+    }
+
+        #navbar ul li {
+            list-style: none;
+            font-size: 1.3rem;
+            margin: 30px 0px;
+        }
+
+            #navbar ul li a {
+                margin: 11px 13px;
+                padding: 7px 5px;
+                color: white;
+                text-decoration: none;
+                /* border-radius: 20px; */
+            }
+
+                #navbar ul li a:hover {
+                    border-radius: 20px;
+                    background-color: #fef0fe;
+                    color: black;
+                }
+
+/*-----------------------------navbar CSS-----------------------*/
+
+
+footer {
+    background: purple;
+    color: white;
+    /* margin: 3px 3px; */
+    padding: 7px 7px;
+    margin-top: auto;
+}
+
+.center {
+    text-align: center;
+}
